@@ -765,15 +765,20 @@
 
  #5597 - 과제 안내신 분?
 
-l = [i + 1 for i in range(30)]
-result = []
+# l = [i + 1 for i in range(30)]
+# result = []
 
-for _ in range(28):
-    a = int(input())
-    if a in l: l.remove(a)
-print(l[0])
-print(l[1])
+# for _ in range(28):
+#     a = int(input())
+#     if a in l: l.remove(a)
+# print(l[0])
+# print(l[1])
 
+# 2562 - 최댓값
 
+numbers = [int(input()) for _ in range(9)]
+
+print (max(numbers))
+print (numbers.index(max(numbers)) + 1)
 
 
