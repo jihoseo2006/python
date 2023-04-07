@@ -707,7 +707,23 @@
 # with open("foo.txt", "w") as f:
 #     f.write("Life is too short, you need python")
 
-f = open("foo.txt", "r")
-lines = f.readlines()
-print(lines)
-f.close()
+# f = open("foo.txt", "r")
+# lines = f.readlines()
+# print(lines)
+# f.close()
+
+#백준 알고리즘 풀기!!
+
+#2408 - 주사위 세개
+
+l = list(map(int, input().split()))
+l.sort()
+if l[0]==l[1] and l[1]==l[2]:
+    print(10000 + l[0] * 1000)
+elif l[0]==l[1] :
+    print(1000 + l[0] * 100)
+elif l[1]==l[2] :
+    print(1000 + l[1] * 100)
+else:
+    print(l[2]* 100)
+
