@@ -716,14 +716,27 @@
 
 #2408 - 주사위 세개
 
-l = list(map(int, input().split()))
-l.sort()
-if l[0]==l[1] and l[1]==l[2]:
-    print(10000 + l[0] * 1000)
-elif l[0]==l[1] :
-    print(1000 + l[0] * 100)
-elif l[1]==l[2] :
-    print(1000 + l[1] * 100)
-else:
-    print(l[2]* 100)
+# l = list(map(int, input().split()))
+# l.sort()
+# if l[0]==l[1] and l[1]==l[2]:
+#     print(10000 + l[0] * 1000)
+# elif l[0]==l[1] :
+#     print(1000 + l[0] * 100)
+# elif l[1]==l[2] :
+#     print(1000 + l[1] * 100)
+# else:
+#     print(l[2]* 100)
 
+#2884 - 알람시계
+(h,m) = map(int,input().split())
+
+if m < 45:
+    d = 45 - m
+    m = 60 - d
+    if h == 0:
+        h = 23
+    else:
+        h = h - 1
+else:
+    m = m - 45
+print(h,m)
