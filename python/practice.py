@@ -728,15 +728,31 @@
 #     print(l[2]* 100)
 
 #2884 - 알람시계
-(h,m) = map(int,input().split())
+# (h,m) = map(int,input().split())
 
-if m < 45:
-    d = 45 - m
-    m = 60 - d
-    if h == 0:
-        h = 23
-    else:
-        h = h - 1
+# if m < 45:
+#     d = 45 - m
+#     m = 60 - d
+#     if h == 0:
+#         h = 23
+#     else:
+#         h = h - 1
+# else:
+#     m = m - 45
+# print(h,m)
+
+#25304 - 영수증
+
+totalcost = int(input())
+
+count = int(input())
+costtotal = 0
+
+for i in range(count):
+    cost,costcount = map(int, input().split())
+    costtotal += (cost * costcount)
+if totalcost == costtotal:
+    print("Yes")
 else:
-    m = m - 45
-print(h,m)
+    print("No")
+
