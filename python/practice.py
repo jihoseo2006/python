@@ -756,13 +756,23 @@
 # else:
 #     print("No")
 
+#번호 기억 안남 - 별찍기 4
 
-ru = int(input())
+# ru = int(input())
 
-for i in range(1,ru+1):
-    print(" " * (ru-i) + "*" * i)
-        
+# for i in range(1,ru+1):
+#     print(" " * (ru-i) + "*" * i)
 
+ #5597 - 과제 안내신 분?
+
+l = [i + 1 for i in range(30)]
+result = []
+
+for _ in range(28):
+    a = int(input())
+    if a in l: l.remove(a)
+print(l[0])
+print(l[1])
 
 
 
