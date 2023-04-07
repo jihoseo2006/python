@@ -776,9 +776,58 @@
 
 # 2562 - 최댓값
 
-numbers = [int(input()) for _ in range(9)]
+# numbers = [int(input()) for _ in range(9)]
 
-print (max(numbers))
-print (numbers.index(max(numbers)) + 1)
+# print (max(numbers))
+# print (numbers.index(max(numbers)) + 1)
+
+
+#클래스
+
+# class Calculator:
+#     def __init__(self):
+#         self.result = 0
+  
+#     def add(self, num):
+#         self.result += num
+#         return self.result
+
+#     def sub(self, num):
+#         self.result -= num
+#         return self.result
+    
+# cal1 = Calculator()
+# cal2 = Calculator()
+
+# print(cal1.add(1))
+# print(cal1.add(2))
+# print(cal2.add(3))
+# print(cal2.add(4))
+
+#사칙연산 계산기 만들기
+
+# class Calculator:
+#     def setdata(self, data1, data2):  #self는 자기자신(객체 임!) 파라미터 아님!
+#         self.data1 = data1
+#         self.data2 = data2
+        
+#     def add(self):
+#         result = self.data1 + self.data2
+#         return result
+#     def sub(self):
+#         result = self.data1 - self.data2
+#         return result
+#     def mul(self):
+#         result = self.data1 * self.data2
+#         return result
+#     def div(self):
+#         result = self.data1 / self.data2
+#         return result
+    
+# inputs = Calculator()
+
+# inputs.setdata(1,2)
+# print(inputs.add())
+
 
 
