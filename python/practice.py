@@ -743,16 +743,27 @@
 
 #25304 - 영수증
 
-totalcost = int(input())
+# totalcost = int(input())
 
-count = int(input())
-costtotal = 0
+# count = int(input())
+# costtotal = 0
 
-for i in range(count):
-    cost,costcount = map(int, input().split())
-    costtotal += (cost * costcount)
-if totalcost == costtotal:
-    print("Yes")
-else:
-    print("No")
+# for i in range(count):
+#     cost,costcount = map(int, input().split())
+#     costtotal += (cost * costcount)
+# if totalcost == costtotal:
+#     print("Yes")
+# else:
+#     print("No")
+
+
+ru = int(input())
+
+for i in range(1,ru+1):
+    print(" " * (ru-i) + "*" * i)
+        
+
+
+
+
 
