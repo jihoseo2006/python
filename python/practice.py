@@ -829,5 +829,20 @@
 # inputs.setdata(1,2)
 # print(inputs.add())
 
+# sum = 0
+# n = int(input())
+# s = list(input())
 
+# for i in range(n):
+#     sum += int(s[i])
 
+# print(sum)
+
+#백준 10809
+al = input() #26개
+a = [-1] * 26
+
+for i in al:
+    a[ord(i)-97] = al.index(i)
+for i in a:
+     print(i, end=" ")
