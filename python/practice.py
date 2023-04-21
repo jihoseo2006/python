@@ -980,14 +980,54 @@
     
 #발생 오류와 오류 변수까지 포함한 except 문
 
-l = [10,20,30]
+# l = [10,20,30]
+
+# try:
+# 	index, x = map(int,input("input index and num: ").split())
+# 	print(l[index] / x)
+# except ZeroDivisionError as e:
+# 	print(e)
+# except IndexError as e:
+# 	print(e)
+
+#else와 finally
+
+#else try문을 실행 중 오류가 발생하였을 때는 
+#except문을 실행하지만 오류가 발생하지 않을 경우 
+#else문을 실행하게 된다.
+	
+# try:
+#     x = int(input("input number: "))
+#     y = 10 / x
+# except ZeroDivisionError:
+#     print("Can't divide by Zero")
+# else:
+#     print(y)
+
+#finally
+#예외 발생 여부와 상관없이 항상 실행하고 싶은 코드가 있을 경우 
+#finally 를 사용할 수 있다.
+
+# try:
+#     x = int(input("input number: "))
+#     y = 10 / x
+# except ZeroDivisionError:
+#     print("Can't divide by Zero")
+# else:
+#     print(y)
+# finally:
+#     print('코드 실행이 끝났습니다.')
+
+
+#예외 발생시키기
+#raise
 
 try:
-	index, x = map(int,input("input index and num: ").split())
-	print(l[index] / x)
-except ZeroDivisionError as e:
-	print(e)
-except IndexError as e:
-	print(e)
-
-	#else와 finally
+    x = int(input("3의 배수를 입력하세요: "))
+    if x % 3 != 0:
+        raise Exception("3의 배수가 아닙니다.")
+    print(x)
+except Exception as e:
+    print(e)
+    
+		
