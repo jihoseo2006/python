@@ -838,11 +838,137 @@
 
 # print(sum)
 
-#백준 10809
-al = input() #26개
-a = [-1] * 26
+# #백준 10809
+# al = input() #26개
+# a = [-1] * 26
 
-for i in al:
-    a[ord(i)-97] = al.index(i)
-for i in a:
-     print(i, end=" ")
+# for i in al:
+#     a[ord(i)-97] = al.index(i)
+# for i in a:
+#      print(i, end=" ")
+
+
+#클래스
+
+# class Calculator:
+#     def __init__(self):
+#         self.result = 0
+  
+#     def add(self, num):
+#         self.result += num
+#         return self.result
+#     def sub(self, num):
+#         self.result -= num
+#         return self.result
+
+# cal1 = Calculator()
+# cal2 = Calculator()
+
+# print(cal1.add(1))
+# print(cal1.add(2))
+# print(cal2.add(3))
+# print(cal2.add(4))
+
+# print(cal1.sub(1))
+# print(cal1.sub(2))
+# print(cal2.sub(3))
+# print(cal2.sub(4))
+
+# class Calculator:
+#     def setdata(self, num1, num2):
+#         self.num1 = num1
+#         self.num2 = num2
+
+#     def add(self):
+#         result = self.num1 + self.num2
+#         return result
+
+        
+#     def sub(self):
+#         result = self.num1 - self.num2
+#         return result
+    
+        
+#     def mul(self):
+#         result = self.num1 * self.num2
+#         return result
+    
+        
+#     def div(self):
+#         result = self.num1 / self.num2
+#         return result
+    
+# class MoreCalculator(Calculator):
+#     def pow(self):
+#         result = self.num1 ** self.num2
+#         return result
+
+# a = MoreCalculator()
+# a.setdata(3, 2)
+# print(a.add())
+# print(a.sub())
+# print(a.mul())
+# print(a.div())
+# print("")
+# print(a.pow())
+
+# n = int(input())
+# for _ in range(n):
+#     a, b = input().split() 
+#     a = int(a)
+#     b = list(b) #문자열 b를 list를 사용하여 하나씩 리스트에 삽입
+#     for i in range(len(b)):
+#         print(b[i]*a, end="") # 리스트 요소를 하나씩 a만큼 반복하여 출력
+#     print("")
+
+
+# import mod1
+# print(mod1.add(1, 2))
+# print(mod1.sub(3, 1))
+
+
+# import mod2
+
+# a = mod2.Math()
+# print(a.solv(2))
+
+#패키지 안의 함수 실행하기
+#방법 1. import 방법
+
+# import game.sound.echo
+
+# game.sound.echo.echo_test()
+
+#방법 2 form ~ import
+# import game.sound.echo
+
+# game.sound.echo.echo_test()
+
+
+#방법 3 from ~ import로 직접 함수 import하기
+
+# from game.sound.echo import echo_test
+
+# echo_test()
+
+# from game.sound.echo import *
+# echo_test()
+
+#예외처리
+
+# try:
+#   n = int(input())
+#   m = 10 / n
+#   print(n)
+# except:
+#   print("Error")
+
+l = [10,20,30]
+
+try:
+	index, x = map(int,input("input index and num: ").split())
+	print(l[index] / x)
+except ZeroDivisionError:
+	print("Can't divide by Zero")
+except IndexError:
+	print("Wrong Index")
