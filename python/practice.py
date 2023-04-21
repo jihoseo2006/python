@@ -963,12 +963,31 @@
 # except:
 #   print("Error")
 
+# l = [10,20,30]
+
+# try:
+# 	index, x = map(int,input("input index and num: ").split())
+# 	print(l[index] / x)
+# except ZeroDivisionError:
+# 	print("Can't divide by Zero")
+# except IndexError:
+# 	print("Wrong Index")
+	
+# try:
+#     print(1+'b')
+# except TypeError:
+#     print("Error")
+    
+#발생 오류와 오류 변수까지 포함한 except 문
+
 l = [10,20,30]
 
 try:
 	index, x = map(int,input("input index and num: ").split())
 	print(l[index] / x)
-except ZeroDivisionError:
-	print("Can't divide by Zero")
-except IndexError:
-	print("Wrong Index")
+except ZeroDivisionError as e:
+	print(e)
+except IndexError as e:
+	print(e)
+
+	#else와 finally
