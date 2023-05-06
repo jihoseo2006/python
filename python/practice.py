@@ -1022,12 +1022,27 @@
 #예외 발생시키기
 #raise
 
-try:
-    x = int(input("3의 배수를 입력하세요: "))
-    if x % 3 != 0:
-        raise Exception("3의 배수가 아닙니다.")
-    print(x)
-except Exception as e:
-    print(e)
-    
-		
+# try:
+#     x = int(input("3의 배수를 입력하세요: "))
+#     if x % 3 != 0:
+#         raise Exception("3의 배수가 아닙니다.")
+#     print(x)
+# except Exception as e:
+#     print(e)
+
+
+#백준 문제풀기
+
+# a,b = input().split()
+
+# a = int(a)
+# b = int(b)
+
+# print(a/b)
+
+# a,b = input().split()
+
+# a = int(a)
+# b = int(b)
+
+# print(a + b)
